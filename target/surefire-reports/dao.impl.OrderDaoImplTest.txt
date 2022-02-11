@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: dao.impl.OrderDaoImplTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! - in dao.impl.OrderDaoImplTest
+testsaveOrder(dao.impl.OrderDaoImplTest)  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.RuntimeException: java.sql.SQLException: Duplicate entry '13113131313131' for key 'PRIMARY' Query: insert into t_order (`order_id`,`create_time`,`price`,`status`,`user_id`) values(?,?,?,?,?) Parameters: [13113131313131, Mon Nov 15 21:43:12 CST 2021, 100, 0, 1]
+	at dao.impl.OrderDaoImplTest.testsaveOrder(OrderDaoImplTest.java:27)
+Caused by: java.sql.SQLException: Duplicate entry '13113131313131' for key 'PRIMARY' Query: insert into t_order (`order_id`,`create_time`,`price`,`status`,`user_id`) values(?,?,?,?,?) Parameters: [13113131313131, Mon Nov 15 21:43:12 CST 2021, 100, 0, 1]
+	at dao.impl.OrderDaoImplTest.testsaveOrder(OrderDaoImplTest.java:27)
+

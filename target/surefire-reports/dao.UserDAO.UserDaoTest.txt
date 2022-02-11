@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: dao.UserDAO.UserDaoTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in dao.UserDAO.UserDaoTest
+testsaveUser(dao.UserDAO.UserDaoTest)  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.RuntimeException: java.sql.SQLException: Duplicate entry 'hdlazy777' for key 'username' Query: INSERT INTO t_user (username,password,email) VALUES(?,?,?) Parameters: [hdlazy777, hdlazy777, hdlazy@qq.com]
+	at dao.UserDAO.UserDaoTest.testsaveUser(UserDaoTest.java:49)
+Caused by: java.sql.SQLException: Duplicate entry 'hdlazy777' for key 'username' Query: INSERT INTO t_user (username,password,email) VALUES(?,?,?) Parameters: [hdlazy777, hdlazy777, hdlazy@qq.com]
+	at dao.UserDAO.UserDaoTest.testsaveUser(UserDaoTest.java:49)
+

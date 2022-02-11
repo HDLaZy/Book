@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: service.impl.UserServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in service.impl.UserServiceImplTest
+testregistUser(service.impl.UserServiceImplTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.sql.SQLException: Duplicate entry 'test123' for key 'username' Query: INSERT INTO t_user (username,password,email) VALUES(?,?,?) Parameters: [test123, test123, test123@test.com]
+	at service.impl.UserServiceImplTest.testregistUser(UserServiceImplTest.java:21)
+Caused by: java.sql.SQLException: Duplicate entry 'test123' for key 'username' Query: INSERT INTO t_user (username,password,email) VALUES(?,?,?) Parameters: [test123, test123, test123@test.com]
+	at service.impl.UserServiceImplTest.testregistUser(UserServiceImplTest.java:21)
+

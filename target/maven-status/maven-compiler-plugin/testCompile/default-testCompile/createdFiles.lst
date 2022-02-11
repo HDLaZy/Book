@@ -1,0 +1,8 @@
+dao\impl\BookDAOImplTest.class
+service\impl\UserServiceImplTest.class
+dao\impl\OrderDaoImplTest.class
+pojo\CartTest.class
+dao\impl\OrderItemDaoImplTest.class
+service\impl\OrderServerImplTest.class
+dao\UserDAO\UserDaoTest.class
+service\impl\BookServiceImplTest.class
